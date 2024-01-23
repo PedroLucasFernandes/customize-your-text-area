@@ -12,11 +12,45 @@ input, select{
 }
 
 textarea{
-    width: 500px;
-    max-width: 500px;
+    width: 80%;
+    max-width: 80%;
     height: 300px;
     max-height: 300px;
-    padding: 8px;
-
     border-radius: 8px;
+
+    padding: 8px;
+    margin-bottom: 10px;
+    
+    display: flex;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    width: 100px;
+}
+
+#importModal,
+#exportModal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+#importCode,
+#exportCode {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#closeImportModal,
+#closeExportModal {
+    cursor: pointer;
 }

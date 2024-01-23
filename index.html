@@ -28,7 +28,22 @@
 
 
     <textarea name="textarea" id="textarea"></textarea>
-    
+
+    <button id="importButton">Import</button>
+    <button id="exportButton">Export</button>
+
+    <div id="importModal">
+        <h2>Insert your settings.</h2>
+        <input id="importCode">
+        <button id="closeImportModal">Ok</button>
+    </div>
+
+    <div id="exportModal">
+        <h2>Copy your settings for to import into another browser.</h2>
+        <p id="exportCode"></p>
+        <button id="closeExportModal">Ok</button>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
