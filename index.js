@@ -22,8 +22,6 @@ try {
     if(localStorage.getItem("form") !== null){
         const formData = JSON.parse(localStorage.getItem("form"));
 
-        console.log("funcionou");
-
         fontSize.value = formData.fontSize;
         fontFamily.value = formData.fontFamily;
         bgColor.value = formData.bgColor;
@@ -37,8 +35,6 @@ try {
 } catch (error) {
     alert(error);
 }
-
-console.log(JSON.parse(localStorage.getItem("form")));
 
 fontSize.addEventListener("change", function(){
     text.style.fontSize = this.value + "px";
